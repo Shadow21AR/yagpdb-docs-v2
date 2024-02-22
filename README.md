@@ -12,6 +12,16 @@ As always clone the repository first and change into it.
 Install [Hugo](https://gohugo.io/getting-started/installing/), clone this repository and run `hugo server` to start a
 local server. The server will automatically rebuild the page when you make changes.
 
+To build the page in release mode:
+
+1. `hugo mod vendor`
+2. `hugo`
+
+Then serve the generated `public/` directory with the webserver of your choice. Adjust the `--baseURL` argument to
+`hugo` as required.
+
+For more information, please view our [Contributing Guidelines](.github/CONTRIBUTING.md).
+
 ### Editor Setup
 
 As this project used the [EditorConfig](https://editorconfig.org/) standard, you will have to make sure that your
@@ -24,4 +34,5 @@ as its Markdown syntax.
 
 ## License
 
-Currently, this project is not distributed under any license. This may or may not change in the future.
+This documentation's text is distributed under the terms of the Creative Commons Attribution ShareAlike 4.0 license
+(SPDX-indentifer `CC-BY-SA`). Please view the [LICENSE](LICENSE) file for more information.
